@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background: #f9f9f9;
+  color: #222;
+}
+
+.imagem{
+  text-align: center;
+  height:170px;
+  width:270px;
+  border-radius: 12px;
+  border: 5px solid black;
+  margin: 0 0 0 300px;
+  
+}
+ 
+
+#titulo{
+  text-align: center;
+  color: blue;
+  
+}
+
+.language-html{
+  border-radius: 12px;
+}
+
+
+.language-css {
+  border-radius: 12px;
+}
+
+
+.saida {
+  color: green;
+  font-weight: bold;
+}
+
+
+
+
+#decorada {
+  color: red;
+  background-color: yellow;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 10px; 
+  width: 300px;
+  height: 100px;
+}
+
+
+h2{
+  color: darkblue;
+}
+
+.azul{
+  color: blue;
+}
+
+.planeta{
+  height: 100px;
+  width: 100px;
+}
+
+
+#unica{
+  color: green;
+  
+}
+#unica2{
+  color: orange;
+}
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  
+  <title>Guia Básico de CSS </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+</head>
+<body>
+
+  <h1 id="titulo">
+  <img style="margin: 0 40px 0 25px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png"
+      height="80" width="70">
+    <br>
+    Guia Básico de CSS
+    
+  </h1>
+  <h2>Para fucionar seus códigos em css:</h2>
+  <pre><code class="language-html">
+  &lt;head&gt;
+ 
+    &lt;link rel="stylesheet" href="nome do seu arquivo"&gt;
+    
+  &lt;/head&gt;
+  </code></pre>
+
+  
+  
+  
+  <h2>Propriedades mais usadas</h2>
+  
+  <img class="imagem"
+    src="https://lh3.googleusercontent.com/pw/AP1GczMxW_z5dhujk9qzWay4fFJ6cnGRy3oFp1e-ykHdK61WsLJc9q_1YBYWW3RH1_oT-I6Tv5NBT3b_p43GJcZXAsW2KYbfhSYBtMkCz8PdyPB7S9cc1D8dYTrwbWG4NEFvywM9_FBDeT4rJZ12Qg98PlPVXA=w601-h322-s-no-gm?authuser=0">
+  
+  <p>
+    Elementos em uma página da web são caixas retangulares com quatro camadas: <b>Conteúdo</b>, 
+    <b>Preenchimentos</b>(<b>Padding</b>), 
+    <b>Bordas</b>
+    e <b>Margens</b>.
+    <br>
+  
+    <img class="imagem"
+      src="https://lh3.googleusercontent.com/pw/AP1GczPaxgbyme73XCaxMX9i5rGJ7MwoaUF3SrCqmlnWFsXdiN3l3pkKl52RcV6G2Z2vzgyDZOAvhaBTIPEIydujxzOuYIhEx81VEP3ztzVmpxjZgYj463UhRXQAVmhQYk6JjtGA2f5gg4xLryLD-C334iOfDQ=w514-h350-s-no-gm?authuser=0">
+    <p>
+      Qualquer elemento tem quatro espaçamentos internos contados no sentido horário, de 
+      <b>cima</b> para a 
+      <b>direita</b>, 
+      para <b>baixo</b>, 
+      para a <b>esquerda</b>.
+    </p>
+    <h2>Exemplo:</h2>
+    <pre><code class="language-css">
+      img {
+       padding-top: 20px;      /*Cima*/
+       padding-right: 20px;    /*Direita*/
+       padding-bottom: 20px;   /*Baixo*/
+       padding-left: 20px;     /*Esquerda*/
+
+        /*OU*/
+        
+        img{
+          padding: 20px 20px 20px 20px;
+          
+            /*Cima, Direita, Baixo, Esquerda*/ 
+        }
+        
+    </code></pre>    
+    
+    
+  <br>
+  <br>
+  <b>📌 color</b> → cor do texto ️
+  <br>
+  <b>📌 background-color</b> → cor de fundo 🎆
+  <br>
+  <b>📌 font-size</b> → tamanho da fonte 🔠
+  <br>
+  <b>📌 font-family</b> → tipo da fonte (Arial, Verdana...) ✍️
+  <br>
+  <b>📌 font-style</b> → Texto de um elemento em itálico. Valor(italico;).
+  <br>
+  <b>📌 font-weight:</b> → Texto de um elemento em negrito. Valor(bold;).
+  <br>
+  <b>📌 text-align</b> → alinhamento (left, center, right) ↔️
+  <br>
+  <b>📌 margin</b> → espaço por fora do elemento 📏
+  <br>
+  <b>📌 padding</b> → espaço por dentro do elemento 📦
+  <br>
+  <b>📌 border</b> → borda (grossura, tipo, cor) ⬛
+  <br>
+  <b>📌 width</b> e <b>height</b> → largura e altura 📐
+    </p>
+ 
+
+  <pre><code class="language-css">
+p {
+ color: red;                 /* cor do texto ️ */
+ background-color: yellow;   /* cor de fundo 🎆 */
+ font-size: 20px;            /* tamanho da fonte 🔠 */
+ font-family: Arial, sans-serif; /* tipo da fonte ✍️ */
+ font-style: italico;        /*Texto em itálico*/
+ font-weight: bold;          /*Texto em negrito*/
+ text-align: center;         /* alinhamento ↔️ */
+ margin: 20px;               /* espaço por fora 📏 */
+ padding: 10px;              /* espaço por dentro 📦 */
+ border: 2px solid blue;     /* borda ⬛ */
+ border-radius: 10px;        /* arredonda os cantos↗️*/
+ width: 300px;               /* largura 📐 */
+ height: 100px;              /* altura 📐 */
+  
+}
+    
+ </code></pre>
+  
+  <h2 class="saida">Saída:</h2>
+  
+  <p id="decorada">Frase descorada</p>
+  
+  <hr>
+  
+  <h2>Class e id</h2>
+  
+ <p>📌<b> class</b>  → class é usado no <b>HTML</b> para marcar elementos que terão omesmo estilo.</p>
+  <br>
+  📌 No <b>CSS</b>, você seleciona uma classe usando um ponto . 
+    <br>
+    (ex: <b>.minhaClasse</b>)
+  
+  <p>📌 O atributo <b>id</b> serve para identificar um elemento único na página.
+No CSS, para selecionar um id, usamos a <b>#</b> (cerquilha).
+    <br>
+    <br>
+<b>⚠️ Importante</b>: cada <b>id</b> deve ser único(<b>não repetir em outros elementos</b>).</p>
+<h2 style="color: orange;">HTML</h2>
+ 
+  <pre><code class="language-html">
+    
+&lt;img class="planeta" src="https://mimo.app/r/earth.png"&gt;
+  
+ &lt;p class="azul"&gt;Frase azul&lt;/p&gt;
+ &lt;p class="azul"&gt;Frase 2 azul&lt;/p&gt;
+ &lt;p&gt;Frase normal&lt;/p&gt;
+ &lt;p id="unica"&gt;Frase unica&lt;/p&gt;
+ &lt;p id="unica2"&gt;Frase unica 2&lt;/p&gt;
+  </code></pre>
+  <h2 style="color: blue;">CSS</h2>
+  <pre><code class="language-css">
+    .planeta{
+       height: 100px;
+       width: 100px;
+    }
+      .azul{
+      color: blue;
+    }
+     #unica{
+     color: green; 
+    }
+     #unica2{
+     color: orange;
+    }
+  </code></pre>
+  
+  <h2 class="saida">Saída:</h2>
+  
+  <img class="planeta" src="https://mimo.app/r/earth.png">
+ 
+  <p class="azul">Frase azul.</p>
+  <p class="azul">Frase 2 azul.</p>
+  <p>Frase normal.</p>
+  <p id="unica">Frase unica</p>
+  <p id="unica2">Frase unica 2</p>
+  
+  <hr>
+  
+  
+  
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+ 
+</body>
+</html>
