@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  
+
+
+
   <title>Guia Básico de CSS </title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
 </head>
+
 <body>
 
-  <h1 id="titulo">
-  <img style="margin: 0 40px 0 25px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png"
-      height="100" width="90">
-    <br>
-    Guia Básico de CSS
-    
-  </h1>
-  <h2>Para fucionar seus códigos em css:</h2>
-  <pre><code class="language-html">
+  <section class="hero">
+
+    <h1 id="titulo">
+      <img class="logo" style="margin: 0 40px 0 25px;" 
+      src="Logo.png"  height="200" width="220px">
+      Guia Básico de CSS
+      
+    </h1>
+
+  </section>
+
+  <section class="content">
+
+
+
+    <h2>Para fucionar seus códigos em css:</h2>
+    <pre><code class="language-html">
   &lt;head&gt;
- 
+
     &lt;link rel="stylesheet" href="nome do seu arquivo"&gt;
     
   &lt;/head&gt;
   </code></pre>
 
-  
-  
-  
-  <h2>Propriedades mais usadas</h2>
-  
-  <img class="imagem"
-    src="img1.jpg">
-  
-  <p>
-    Elementos em uma página da web são caixas retangulares com quatro camadas: <b>Conteúdo</b>, 
-    <b>Preenchimentos</b>(<b>Padding</b>), 
-    <b>Bordas</b>
-    e <b>Margens</b>.
-    <br>
-  
-    <img class="imagem"
-      src="img2.jpg">
+
+
+
+    <h2>Propriedades mais usadas</h2>
+
+    <img class="imagem" src="img1.jpg">
+
     <p>
-      Qualquer elemento tem quatro espaçamentos internos contados no sentido horário, de 
-      <b>cima</b> para a 
-      <b>direita</b>, 
-      para <b>baixo</b>, 
+      Elementos em uma página da web são caixas retangulares com quatro camadas: <b>Conteúdo</b>,
+      <b>Preenchimentos</b>(<b>Padding</b>),
+      <b>Bordas</b>
+      e <b>Margens</b>.
+      <br>
+
+      <img class="imagem" src="img2.jpg">
+    <p>
+      Qualquer elemento tem quatro espaçamentos internos contados no sentido horário, de
+      <b>cima</b> para a
+      <b>direita</b>,
+      para <b>baixo</b>,
       para a <b>esquerda</b>.
     </p>
     <h2>Exemplo:</h2>
     <pre><code class="language-css">
       img {
-       padding-top: 20px;      /*Cima*/
-       padding-right: 20px;    /*Direita*/
-       padding-bottom: 20px;   /*Baixo*/
-       padding-left: 20px;     /*Esquerda*/
 
+        padding-top: 20px;      /*Cima*/
+        padding-right: 20px;    /*Direita*/
+        padding-bottom: 20px;   /*Baixo*/
+        padding-left: 20px;     /*Esquerda*/
+      }
+  
         /*OU*/
         
         img{
@@ -67,37 +77,37 @@
             /*Cima, Direita, Baixo, Esquerda*/ 
         }
         
-    </code></pre>    
-    
-    
-  <br>
-  <br>
-  <b>📌 color</b> → cor do texto ️
-  <br>
-  <b>📌 background-color</b> → cor de fundo 🎆
-  <br>
-  <b>📌 font-size</b> → tamanho da fonte 🔠
-  <br>
-  <b>📌 font-family</b> → tipo da fonte (Arial, Verdana...) ✍️
-  <br>
-  <b>📌 font-style</b> → Texto de um elemento em itálico. Valor(italico;).
-  <br>
-  <b>📌 font-weight:</b> → Texto de um elemento em negrito. Valor(bold;).
-  <br>
-  <b>📌 text-align</b> → alinhamento (left, center, right) ↔️
-  <br>
-  <b>📌 margin</b> → espaço por fora do elemento 📏
-  <br>
-  <b>📌 padding</b> → espaço por dentro do elemento 📦
-  <br>
-  <b>📌 border</b> → borda (grossura, tipo, cor) ⬛
+    </code></pre>
 
-  <br>
-  <b>📌 width</b> e <b>height</b> → largura e altura 📐
+
+    <br>
+    <br>
+    <b>📌 color</b> → cor do texto ️
+    <br>
+    <b>📌 background-color</b> → cor de fundo 🎆
+    <br>
+    <b>📌 font-size</b> → tamanho da fonte 🔠
+    <br>
+    <b>📌 font-family</b> → tipo da fonte (Arial, Verdana...) ✍️
+    <br>
+    <b>📌 font-style</b> → Texto de um elemento em itálico. Valor(italico;).
+    <br>
+    <b>📌 font-weight:</b> → Texto de um elemento em negrito. Valor(bold;).
+    <br>
+    <b>📌 text-align</b> → alinhamento (left, center, right) ↔️
+    <br>
+    <b>📌 margin</b> → espaço por fora do elemento 📏
+    <br>
+    <b>📌 padding</b> → espaço por dentro do elemento 📦
+    <br>
+    <b>📌 border</b> → borda (grossura, tipo, cor) ⬛
+
+    <br>
+    <b>📌 width</b> e <b>height</b> → largura e altura 📐
     </p>
- 
 
-  <pre><code class="language-css">
+
+    <pre><code class="language-css">
 p {
  color: red;                 /* cor do texto ️ */
  background-color: yellow;   /* cor de fundo 🎆 */
@@ -115,71 +125,73 @@ p {
   
 }
     
- </code></pre>
-  
-  <h2 class="saida">Saída:</h2>
-  
-  <p id="decorada">Frase descorada</p>
-  
-  <hr>
+</code></pre>
 
-<h2>Display: flex;</h2>
-<p>
-<b>display: flex; </b>  é usada em CSS para transformar um elemento em um container flexível (<b>ou flex container</b>), 
-<br>
-permitindo que seus elementos filhos (<b>os itens flexíveis</b>)
+    <h2 class="saida">Saída:</h2>
 
-  sejam organizados de forma
-  <br>
-  mais eficiente e responsiva.
-</p>
+    <p id="decorada">Frase descorada</p>
 
-  <h2>justify-content: ;</h2>
+    <hr>
 
-   📌 <b>flex-start</b> → Os itens são alinhados ao lado esquerdo do contêiner.
-<br>
-   📌 <b>flex-end</b> → Os itens são alinhados ao lado direito do contêiner.
-<br>
-   📌 <b>center</b> → Os itens são alinhados no centro do contêiner.
-<br>
-   📌 <b>space-between</b> → Os itens são exibidos com espaçamento igual entre eles.
+    <h2>Display: flex;</h2>
+    <p>
+      <b>display: flex; </b> é usada em CSS para transformar um elemento em um container flexível (<b>ou flex
+        container</b>),
+      <br>
+      permitindo que seus elementos filhos (<b>os itens flexíveis</b>)
 
-<br>
-   📌 <b>space-around</b> → Os itens são exibidos com espaçamento igual ao redor deles.
+      sejam organizados de forma
+      <br>
+      mais eficiente e responsiva.
+    </p>
+
+    <h2>justify-content: ;</h2>
+
+    📌 <b>flex-start</b> → Os itens são alinhados ao lado esquerdo do contêiner.
+    <br>
+    📌 <b>flex-end</b> → Os itens são alinhados ao lado direito do contêiner.
+    <br>
+    📌 <b>center</b> → Os itens são alinhados no centro do contêiner.
+    <br>
+    📌 <b>space-between</b> → Os itens são exibidos com espaçamento igual entre eles.
+
+    <br>
+    📌 <b>space-around</b> → Os itens são exibidos com espaçamento igual ao redor deles.
 
 
-<h2>flex-direction: ;</h2>
+    <h2>flex-direction: ;</h2>
 
- 
-  
-  📌 <b>row</b> → Os itens são colocados na mesma direção do texto.
-  <br>
-  📌 <b>row-reverse</b>  → Os itens são colocados opostos à direção do texto.
-<br>
-  📌 <b>column</b>  → Os itens são colocados de cima para baixo.
-<br>
-  📌 <b>column-reverse</b> → Os itens são colocados de baixo para cima.
-  </p>
-  <br>
 
-<hr>
 
-  <h2>Class e id</h2>
-  
- <p>📌<b> class</b>  → class é usado no <b>HTML</b> para marcar elementos que terão omesmo estilo.</p>
-  <br>
-  📌 No <b>CSS</b>, você seleciona uma classe usando um ponto . 
+    📌 <b>row</b> → Os itens são colocados na mesma direção do texto.
+    <br>
+    📌 <b>row-reverse</b> → Os itens são colocados opostos à direção do texto.
+    <br>
+    📌 <b>column</b> → Os itens são colocados de cima para baixo.
+    <br>
+    📌 <b>column-reverse</b> → Os itens são colocados de baixo para cima.
+    </p>
+    <br>
+
+    <hr>
+
+    <h2>Class e id</h2>
+
+    <p>📌<b> class</b> → class é usado no <b>HTML</b> para marcar elementos que terão omesmo estilo.</p>
+    <br>
+    📌 No <b>CSS</b>, você seleciona uma classe usando um ponto .
     <br>
     (ex: <b>.minhaClasse</b>)
-  
-  <p>📌 O atributo <b>id</b> serve para identificar um elemento único na página.
-No CSS, para selecionar um id, usamos a <b>#</b> (cerquilha).
-    <br>
-    <br>
-<b>⚠️ Importante</b>: cada <b>id</b> deve ser único(<b>não repetir em outros elementos</b>).</p>
-<h2 style="color: orange;">HTML</h2>
- 
-  <pre><code class="language-html">
+
+    <p>📌 O atributo <b>id</b> serve para identificar um elemento único na página.
+      No CSS, para selecionar um id, usamos a <b>#</b> (cerquilha).
+      <br>
+      <br>
+      <b>⚠️ Importante</b>: cada <b>id</b> deve ser único(<b>não repetir em outros elementos</b>).
+    </p>
+    <h2 style="color: orange;">HTML</h2>
+
+    <pre><code class="language-html">
     
 &lt;img class="planeta" src="https://mimo.app/r/earth.png"&gt;
   
@@ -189,53 +201,42 @@ No CSS, para selecionar um id, usamos a <b>#</b> (cerquilha).
  &lt;p id="unica"&gt;Frase unica&lt;/p&gt;
  &lt;p id="unica2"&gt;Frase unica 2&lt;/p&gt;
   </code></pre>
-  <h2 style="color: blue;">CSS</h2>
-  <pre><code class="language-css">
+    <h2 style="color: rgb(0, 68, 255);">CSS</h2>
+    <pre><code class="language-css">
     .planeta{
-       height: 100px;
-       width: 100px;
+      height: 100px;
+      width: 100px;
+      border-radius: 12px;
     }
-      .azul{
+    .azul{
       color: blue;
     }
-     #unica{
-     color: green; 
+    #unica{
+    color: green; 
     }
-     #unica2{
-     color: orange;
+    #unica2{
+    color: orange;
     }
   </code></pre>
-  
-  <h2 class="saida">Saída:</h2>
-  
-  <img class="planeta" src="https://mimo.app/r/earth.png">
- 
-  <p class="azul">Frase azul.</p>
-  <p class="azul">Frase 2 azul.</p>
-  <p>Frase normal.</p>
-  <p id="unica">Frase unica</p>
-  <p id="unica2">Frase unica 2</p>
-  
-  <hr>
-  
-  
-  
 
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- 
- 
-<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
- 
+    <h2 class="saida">Saída:</h2>
+
+    <img class="planeta" src="https://mimo.app/r/earth.png">
+
+    <p class="azul">Frase azul.</p>
+    <p class="azul">Frase 2 azul.</p>
+    <p>Frase normal.</p>
+    <p id="unica">Frase unica</p>
+    <p id="unica2">Frase unica 2</p>
+
+    <hr>
+
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+
 </body>
-</html>
 
+</html>
